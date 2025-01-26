@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="animation-hand.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Concert+One&family=Lilita+One&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="backGroundStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-overlay"></div>
+      <div class="radial-overlay"></div>
+    </div>
+    <nav>
+      <div class="inner-nav font-lilita">
+        <ul>
+          <li class="nav-section im-here home"><a href="#home">Home</a></li>
+          <li class="nav-section about"><a href="#about">About</a></li>
+          <li class="nav-section project"><a href="#projects">Projects</a></li>
+          <li class="nav-section contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="home" id="home" data-name="home">
+      <canvas id="homeCanvas"></canvas>
+      <div class="home-content">
+        <div class="home-content-text">
+          <p style="font-size: 20px">
+            Hi I'm mohamed <span class="wave">👋</span>
+          </p>
+          <h1 class="typing-text-animation font-gradient font-rubik">
+            Full Stack Web Developer
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, ex
+            ipsa! Ducimus molestias debitis fugiat ut exercitationem obcaecati,
+            consequuntur, pariatur magnam modi autem eos eius beatae at numquam
+            dignissimos omnis!
+          </p>
+          <div class="btns-profile">
+            <div class="btn-more">Learn More</div>
+            <div class="btn-more">Show projects</div>
+          </div>
+        </div>
+        <div class="img-content center">
+          <canvas class="img-profile" width="300" height="300"></canvas>
+        </div>
+      </div>
+      <div class="scroll-animation">
+        <h3 class="font-gradient font-lilita">scroll down</h3>
+        <i class="fa-solid fa-arrow-down icon-scroll font-gradient"></i>
+      </div>
+    </section>
+    <section id="about" class="about center has-title" data-name="about">
+      <h5 class="font-gradient font-bangers">About Me</h5>
+      <div class="container-about">
+        <div class="first-block">
+          <div class="hobbies relative-container" style="--delay:0s">
+            <div class="circle-left"></div>
+            <div class="circle-right"></div>
+            <h3 class="font-lilita font-gradient">My Hobbies</h3>
+            <div class="hobbies-aria"></div>
+          </div>
+          <div class="copy-email" style="--delay:.5s">
+            <h3 class="font-lilita">
+              do you want to start a project together ?
+            </h3>
+            <div class="btn center">
+              <div class="first-copy-content center">
+                <span class="icon-copy" style="--dir: -1; --delay: 0.8s"
+                  ><i class="fa-solid fa-copy"></i
+                ></span>
+                <span class="font-comfortaa" style="--dir: 1; --delay: 0.3s"
+                  >copy my email address</span
+                >
+              </div>
+              <div class="seconde-copy-content center disabled">
+                <span class="icon-copy" style="--delay: 0.3s"
+                  ><i class="fa-regular fa-copy"></i></span
+                ><span class="font-comfortaa" style="font-size: 15px">
+                  Email copied</span
+                >
+              </div>
+            </div>
+            <canvas width="400" height="300" class="boomb"></canvas>
+          </div>
+        </div>
+        <div class="seconde-block relative-container">
+          <div class="circle-left"></div>
+          <div class="circle-right"></div>
+          <h3 class="font-gradient font-lilita">My Skills</h3>
+          <p style="width: 90%; font-family: monospace">
+            I’m Mohamed Ettalbi, a second-year software engineering student at
+            Mohammed V University in Rabat. I’m passionate about technology,
+            programming, and building innovative software solutions. As I
+            continue my studies, I am eager to expand my knowledge, sharpen my
+            skills, and contribute to impactful projects in the tech field.
+          </p>
+          <div class="container-skills">
+            <div class="choose-skills-tools font-lilita">
+              <div class="btn center is-clicked was-it-clicked">skills</div>
+              <div class="btn center">tools</div>
+            </div>
+            <div class="container-techologies center">
+              <div class="icons skills">
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #f7df1e"
+                >
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #28c76f"
+                >
+                  <i class="fa-brands fa-node"></i>
+                </div>
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #1871ed"
+                >
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #777bb4"
+                >
+                  <i class="fa-brands fa-php"></i>
+                </div>
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #42b883"
+                >
+                  <i class="fa-brands fa-vuejs"></i>
+                </div>
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #f89820"
+                >
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #2496ed"
+                >
+                  <i class="fa-brands fa-docker"></i>
+                </div>
+                <div
+                  class="skills-icon icon-about center"
+                  style="--clr: #ffac81"
+                >
+                  <i class="fa-brands fa-swift"></i>
+                </div>
+              </div>
+              <div class="icons tools disabled">
+                <div class="skills-icon center icon-about" style="--count: 1;--clr:#F24E1E;">
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="skills-icon center icon-about" style="--count: 2;--clr:#21759B;">
+                  <i class="fa-brands fa-wordpress"></i>
+                </div>
+                <div class="skills-icon center icon-about" style="--count: 3;--clr:#FFFFFF;">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="skills-icon center icon-about" style="--count: 4;--clr:#C0C0C0;">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="skills-icon center icon-about" style="--count: 5;--clr:#FDD835;">
+                  <i class="fa-brands fa-linux"></i>
+                </div>
+                <div class="skills-icon center icon-about" style="--count: 6;--clr:#E24329;">
+                  <i class="fa-brands fa-gitlab"></i>
+                </div>
+                <div class="skills-icon center icon-about" style="--count: 7;--clr:#28A745;">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="skills-icon center icon-about" style="--count: 8;--clr:#00FF00">
+                  <i class="fa-solid fa-terminal"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects center has-title" style="overflow: hidden" data-name="project">
+      <h2 class="font-gradient font-bangers">Projects</h2>
+      <div class="projects-container">
+        <div class="card center" style="--delay: 0s; --size: 300px">
+          <div class="inner-card center">
+            <img src="game1.png" alt="" />
+            <div class="container-text">
+              <h3 class="font-lilita">Tic Tac Toe Game</h3>
+              <p class="font-concert">
+                This is a Tic Tac Toe Game with options to choose the to play
+                with bot or with your freinds
+              </p>
+              <div class="check">
+                <div class="icons-tech center">
+                  <i class="fa-brands fa-html5" style="color: #e55f28"></i>
+                  <i class="fa-brands fa-css3-alt" style="color: #26a0d7"></i>
+                  <i class="fa-brands fa-js" style="color: #ffd43b"></i>
+                </div>
+                <a
+                  href="https://talbi123.github.io/PROJECTS_JS/"
+                  class="font-concert"
+                  >Check The Site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card center" style="--delay: 0.3s; --size: 300px">
+          <div class="inner-card center">
+            <img src="adahn.png" alt="" />
+            <div class="container-text">
+              <h3 class="font-lilita">Prayer Times</h3>
+              <p class="font-concert">
+                This is Prayer Times App you can select the city you want and it
+                give you the times of adahan in each city you choosed
+              </p>
+              <div class="check">
+                <div class="icons-tech center">
+                  <i class="fa-brands fa-html5" style="color: #e55f28"></i>
+                  <i class="fa-brands fa-css3-alt" style="color: #26a0d7"></i>
+                  <i class="fa-brands fa-js" style="color: #ffd43b"></i>
+                </div>
+                <a
+                  href="https://talbi123.github.io/prayer-time/"
+                  class="font-concert"
+                  >Check The Site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card center" style="--delay: 0.6s; --size: 300px">
+          <div class="inner-card center">
+            <img src="quiz.png" alt="" />
+            <div class="container-text">
+              <h3 class="font-lilita">Tic Tac Toe Game</h3>
+              <p class="font-concert">
+                This is a Tic Tac Toe Game with options to choose the to play
+                with bot or with your freinds
+              </p>
+              <div class="check">
+                <div class="icons-tech center">
+                  <i class="fa-brands fa-html5" style="color: #e55f28"></i>
+                  <i class="fa-brands fa-css3-alt" style="color: #26a0d7"></i>
+                  <i class="fa-brands fa-js" style="color: #ffd43b"></i>
+                </div>
+                <a
+                  href="https://talbi123.github.io/quiz-game/"
+                  class="font-concert"
+                  >Check The Site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact center has-title" data-name="contact">
+      <h2 class="font-gradient font-bangers ">Contact</h2>
+      <div class="container-contact center">
+        <form class="form-contcat">
+          <h2 class="font-lilita">send me</h2>
+          <div class="inner-form center">
+            <input type="text" placeholder="full name" />
+            <input type="email" placeholder="email" />
+            <textarea name="" style="height: 40%" id=""></textarea>
+            <button class="btn-form">submit</button>
+          </div>
+        </form>
+        <!-- <img src="imgs/male.png" alt="" srcset="" "> -->
+        <canvas
+          class="canvas-contact"
+          width="280"
+          height="380"
+        ></canvas>
+      </div>
+    </section>
+    <footer class="animated-footer">
+      <div class="footer-content">
+        <p class="footer-title">Stay Connected</p>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <p class="footer-note">© 2025 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="bomb.js"></script>
+    <script src="particles.js"></script>
+    <script src="img.js"></script>
+    <script src="particule-image.js"></script>
+    <script src="pixelImage.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.relative-container {
+    position: relative;
+    background-color: #002;
+    /* overflow: hidden; */
+  z-index: 3;
+
+  }
+  
+  .relative-container> .circle-left {
+    position: absolute;
+    /* bottom: 0;
+    left: -20%;
+    top: -10%; */
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-side, rgba(255, 0, 183, 0.231), rgba(255, 255, 255, 0));
+    z-index: -1;
+  }
+  
+  .relative-container> .circle-right {
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+    top: -10%;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    z-index: -1;
+    background: radial-gradient(circle farthest-side, rgba(255, 0, 183, 0.194), rgba(255, 255, 255, 0));
+  }
+  
